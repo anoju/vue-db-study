@@ -45,7 +45,7 @@ https://git-scm.com/
 #### node 설치
 https://nodejs.org/ko/
 
-> yarn도 추가설치하면 좋음(안해도 무방)
+> yarn도 추가설치하면 좋음(안해도 무방)   
 > https://yarnpkg.com/
 ```
 기존의 설치된분은 기왕이면 최신버전으로 UP해주세요(안해도 무방)
