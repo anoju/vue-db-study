@@ -23,17 +23,17 @@
 https://code.visualstudio.com/
 
 #### vscode 확장프로그램
-1. vetur (필수)
+1. vetur (필수)   
 https://marketplace.visualstudio.com/items?itemName=octref.vetur
-2. prettier (필수)
+2. prettier (필수)   
 https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-3. eslint (필수)
+3. eslint (필수)   
 https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-4. git-graph (필수)
+4. git-graph (필수)   
 https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
 
 #### 크롬 확장프로그램
-1. Vue.js devtools
+1. Vue.js devtools   
 https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=ko
 
 #### 형상관리: git
@@ -47,8 +47,9 @@ https://nodejs.org/ko/
 
 > yarn도 추가설치하면 좋음(안해도 무방)
 > https://yarnpkg.com/
-
+```
 기존의 설치된분은 기왕이면 최신버전으로 UP해주세요(안해도 무방)
+```
 
 ## 참고사항
 
