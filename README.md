@@ -3,7 +3,7 @@
 > VUE 공식 사이트   
 > https://vuejs.org/
 
-> VUE란?   
+> VUE란? (대충 구글링한거 넣은거임..)   
 > https://kr.vuejs.org/v2/guide/index.html   
 > https://wikidocs.net/17701
 
