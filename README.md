@@ -29,11 +29,11 @@ https://marketplace.visualstudio.com/items?itemName=octref.vetur
 https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 3. eslint (필수)   
 https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-4. git-graph (필수)   
+4. git-graph (선택)   
 https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
 
 #### 크롬 확장프로그램
-1. Vue.js devtools   
+1. Vue.js devtools (선택)   
 https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=ko
 
 #### 형상관리: git
