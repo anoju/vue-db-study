@@ -1,10 +1,10 @@
 # vue-db-study
 
-> VUE 공식 사이트
+> VUE 공식 사이트   
 > https://vuejs.org/
 
-> VUE란? 
-> https://kr.vuejs.org/v2/guide/index.html
+> VUE란?   
+> https://kr.vuejs.org/v2/guide/index.html   
 > https://wikidocs.net/17701
 
 ------------
