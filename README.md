@@ -1,17 +1,16 @@
 # vue-db-study
-
+   
 > VUE 공식 사이트   
 > https://vuejs.org/
-
+   
 > VUE란? (대충 구글링한거 넣은거임..)   
 > https://kr.vuejs.org/v2/guide/index.html   
 > https://wikidocs.net/17701
-
-------------
-
+   
 ## 준비물 + 사전준비사항
 
-준비물은.. 개인 노트북(필수)!! 보는걸로 다 알수있으면 패스(그럼 필수가 아닌가? ;;;)   
+준비물은.. 개인 노트북(필수)!!   
+보는걸로 다 알수있으면 패스(그럼 필수가 아닌가? ;;;)   
 어렵더라도 포기하지않을 정신력!!   
    
 그리고 스터디의 기대감은 집에 놓고 오시길.....   
@@ -19,10 +18,10 @@
 물론 프로젝트마다 환경이 조금씩 다를수 잇습니다.   
 이점도 유의하시길~~~
 
-#### 사용할에디터: vscode
+### 사용할에디터: vscode
 https://code.visualstudio.com/
 
-#### vscode 확장프로그램
+### vscode 확장프로그램
 1. vetur (필수)   
 https://marketplace.visualstudio.com/items?itemName=octref.vetur
 2. prettier (필수)   
@@ -35,17 +34,34 @@ https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
 vscode에서 eslint 설치후 첫실행때 실행여부를 물어보면 꼭 수락[allow]해야합니다.
 ```
 
-#### 크롬 확장프로그램
+### 크롬 확장프로그램
 1. Vue.js devtools (선택)   
 https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=ko
 
-#### 형상관리: git
+### git (형상관리)
 https://git-scm.com/
 ```
 사전에 저장소에 push 및 pull 테스트를 하고오면 시간 절약을 할수 있어서 좋아요!!
 ```
 
-#### node 설치
+### git 관리 툴
+
+저는 vscode에 자체 기능을 이용해서 git을 push 및 pull 을 합니다. (명령어 아님)   
+그게 프로그램도 덜 띄우고 오히려 좋은거 같아요~   
+(그래서 git-graph도 설치하는거임)
+하지만 그게 힘든 사람도 있을수 있으니...
+   
+1. 소스트리   
+https://www.sourcetreeapp.com/   
+초창기때 명령어가 익숙치 않아서 사용하던분들이 현재까지도 많이 씁니다. 물론 저도 썻었음   
+
+2. gitkraken   
+https://www.gitkraken.com/ 
+같이 플젝하던 개발자가 쓰는걸 보고 알았습니다.   
+디자인이 더 프로페셔널(?)하고 UI가 먼가 더 좋아보이며 기능이 많아보입니다.   
+자세한건... 저도 아직 안써봄; ㅋㅋㅋ
+
+### node 설치
 https://nodejs.org/ko/
 
 > yarn도 추가설치하면 좋음(안해도 무방)   
@@ -54,7 +70,48 @@ https://nodejs.org/ko/
 기존의 설치된분은 기왕이면 최신버전으로 UP해주세요(안해도 무방)
 ```
 
-## 참고사항
+## CSS전처리기 : SCSS
+공식 사이트   
+https://sass-lang.com/   
+   
+한글 사이트(아마 비공식? 꾸준히 업뎃하는지는 모르겟음)   
+https://sass-guidelin.es/ko/
+
+SCSS란?(이것도 대충 구글링..)   
+https://yunzema.tistory.com/269   
+   
+언제부터인가 전 SCSS 찬양자가 되었습니다.   
+왜냐하면 autoprefixer 때문에...   
+최대한 한줄이라도 덜 적는게 얼마나 편하던지....   
+   
+VUE 플젝에서 SCSS가 필수는 아니지만    
+(일반 CSS 및 LESS, Stylus, PostCSS 등 다른것도 사용가능)   
+이제까지 참여했던 VUE 플젝에서는 모두 SCSS를 사용했습니다.   
+   
+예전에 vue init 해서 만들때 scss 사용여부를 물었던거 같았는데..   
+어디서 잘못된건지 지금은 안물어보고 PostCSS만 세팅되어 있어서   
+scss는 추가설치했습니다.   
+이과정에서 최신버전이랑 호환이 안되서....    
+몇번이나 지웠다가... 버전 내려서 재설치하고....    
+이 과정을 몇번이나 반복 함...   
+   
+일반 html코딩 플젝에서도 이제 저는 SCSS를 사용하려고 하는데   
+그때 구지 복잡하게 gulp를 세팅하진 않습니다.    
+강려크한 vscode 확장프로그램이 있기때문에~~   
+   
+Live Server까지 잇으면 금상첨화~~~   
+
+1. Live Sass Compiler   
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass   
+SCSS파일 변화를 감지하여 css파일로 바로 컴파일 함
+설정을 통한 컴파일 방식 및 위치를 설정가능
+2. Live Server
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer   
+가상서버로 현재 코딩하고 잇는 html를 볼수있으며   
+(그래서 모바일에서 확인도 쉬움)
+html 및 CSS 변화를 감지하여 브라우저를 자동 새로고침 해줌
+
+## 진행방법 및 참고사항
 
 저장소 루트폴더가 작업폴더가 아니라   
 그 바로 아래 (이니셜등을 이용한) 각자 폴더를 만들어   
@@ -71,12 +128,14 @@ https://nodejs.org/ko/
 옮긴후   
 
 > npm i   
-> npm 설치가 끝나면
+> npm 설치가 끝나면   
 > npm run dev 또는 yarn dev   
-> 그러면 실행 끝
 
-실행하면 됩니다.
+그러면 실행 끝!!!
    
-PS. vue init 해서 새로 vue 플젝 만들었더니.. 구조가 약간 이전플젝이랑 좀 다르네요...   
-   
+vue init 해서 새로 vue 플젝 만들었더니..   
+구조가 약간 이전플젝이랑 좀 다르네요...   
+(vue cli 버전업에 따라 바뀐거 같은데...) 
+여기에 따른 (제가) 혼돈이 올 수도 잇음   
+
 # 그럼 모두 화이팅!!!
