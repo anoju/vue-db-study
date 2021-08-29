@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <hello-logo :message="msg" />
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -80,16 +80,25 @@
         </a>
       </li>
     </ul>
+    <h2>테스트화면</h2>
+    <ul>
+      <li><router-link to="/page/index">이동</router-link></li>
+    </ul>
   </div>
 </template>
 
 <script>
+import helloLogo from '@/components/HelloLogo.vue'
+
 export default {
   name: 'HelloWorld',
+  components: {
+    helloLogo
+  },
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: 'Welcome to Your Vue.js App'
     }
-  },
+  }
 }
 </script>

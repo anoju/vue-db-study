@@ -9,7 +9,11 @@ module.exports = {
     browser: true,
     node: true
   },
-  extends: ['plugin:vue/essential', 'airbnb-base'],
+  // extends: ['plugin:vue/essential', 'airbnb-base'],
+  extends: [
+    'plugin:vue/recommended',
+    'airbnb-base'
+  ],
   // plugins: [
   //   'vue'
   // ],
@@ -47,7 +51,7 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     semi: ['error', 'never'],
-    // 'comma-dangle': ['error', 'never'],
+    'comma-dangle': ['error', 'never'],
     indent: ['error', 2],
     quotes: ['error', 'single'], // 문자열따옴표 설정(single / double)
     'vue/html-indent': ['error', 2],
@@ -66,7 +70,7 @@ module.exports = {
     // 'comma-spacing': 'error', // 콤마뒤에 한칸띄어주기 설정
     // 'eol-last': ['error'], // 파일끝에 한줄공백 설정
     // 'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }], // 소스라인 간의 줄공백 최대값 설정
-    'no-trailing-spaces': ['error'], // trim에 의해서 제거대상이 되는 공백(소스라인 양끝)에 대한 처리
+    // 'no-trailing-spaces': ['error'], // trim에 의해서 제거대상이 되는 공백(소스라인 양끝)에 대한 처리
     // 'prefer-template': ['off'], // `template${~~}` 사용 강제여부 설정
   }
 }
