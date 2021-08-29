@@ -59,8 +59,12 @@ https://www.sourcetreeapp.com/
 https://www.gitkraken.com/   
 같이 플젝하던 개발자가 쓰는걸 보고 알았습니다.   
 디자인이 더 프로페셔널(?)하고 UI가 먼가 더 좋아보이며 기능이 많아보입니다.   
-자세한건... 저도 아직 안써봄; ㅋㅋㅋ
+자세한건... 저도 아직 안써봄; ㅋㅋㅋ   
 
+3. tortoisegit(일명 거북이git)    
+https://tortoisegit.org/   
+이게 편한분도 있겠지만..   
+갠적으로 이걸쓸바엔...차라리 vscode기능을 쓰는게 나을듯 ㅋㅋ   
 ### node 설치
 https://nodejs.org/ko/
 

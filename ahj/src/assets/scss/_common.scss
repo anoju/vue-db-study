@@ -82,10 +82,89 @@ html.is_app{
     height: 54px;
     flex: 0 0 54px;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    background: #000;
-    color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 0 20px;
+    h1 {
+      flex: 1 1 auto;
+      text-align: center;
+      margin: 0 28px;
+    }
+    [class*=btn_]{
+      position:relative;
+      display:block;
+      height:40px;
+      overflow:hidden;
+    }
+    .btn_back{
+      width:24px;flex:0 0 24px;margin-left:-6px;
+      background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23222' stroke-width='1.5'%3E%3Cg%3E%3Cg%3E%3Cpath d='M16 4L8 12.242 16 20' transform='translate(-250 -412) translate(240 396) translate(10 16)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") 50% 50% no-repeat;background-size:24px auto;
+      + h1{margin-left: 10px;}
+    }
+    .btn_gnb{
+      width:32px;flex:0 0 32px;margin-right:-6px;
+      i {
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 1px;
+        background: #333;
+        font-size: 3px;
+        color: transparent;
+        top: 20px;
+        right: 6px;
+        transition: background 0.3s 0s;
+        &:before {
+          display: block;
+          position: absolute;
+          width: 20px;
+          height: 1px;
+          background: #333;
+          content: '';
+          right: 0;
+          transition-duration: 0.3s, 0.2s;
+          transition-delay: 0.5s, 0s;
+          top: -7px;
+          right: 6px;
+          width: 12px;
+          transition-property: top, transform;
+        }
+        &:after {
+          display: block;
+          position: absolute;
+          width: 20px;
+          height: 1px;
+          background: #333;
+          content: '';
+          right: 0;
+          transition-duration: 0.3s, 0.2s;
+          transition-delay: 0.5s, 0s;
+          bottom: -7px;
+          width: 12px;
+          transition-property: bottom, transform;
+        }
+      }
+      &.on {
+        i {
+          width: 20px;
+          background: none !important;
+          transition: background 0s 0.3s;
+          &:before {
+            transition-delay: 0s, 0.3s;
+            right: 0;
+            top: 0;
+            width: 20px;
+            transform: rotate(45deg);
+          }
+          &:after {
+            transition-delay: 0s, 0.3s;
+            bottom: 0;
+            width: 20px;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
   }
   .container{
     padding: 20px;

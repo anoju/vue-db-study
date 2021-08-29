@@ -82,7 +82,8 @@
     </ul>
     <h2>테스트화면</h2>
     <ul>
-      <li><router-link to="/page/index">이동</router-link></li>
+      <li><router-link to="/page/index">index 이동</router-link></li>
+      <li><router-link to="/page/form">form 이동</router-link></li>
     </ul>
   </div>
 </template>

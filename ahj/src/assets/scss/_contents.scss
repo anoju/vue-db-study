@@ -5,8 +5,17 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  .logo{
+  .logo_wrap{
     margin-bottom: 5rem;
+    div{
+      display: flex;
+      justify-content: center;
+    }
+    .img{
+      width: 200px;
+      height: 200px;
+      background: url('~@/assets/images/logo.png') no-repeat center center;
+    }
   }
   h2{
     margin-top: 2rem;

@@ -23,8 +23,12 @@ const routes = [
   {
     path: '/page/index',
     name: 'index',
-    // component: HelloWorld,
     component: () => import('@/views/page/index.vue')
+  },
+  {
+    path: '/page/form',
+    name: 'form',
+    component: () => import('@/views/page/form.vue')
   }
 ]
 

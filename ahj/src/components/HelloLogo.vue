@@ -1,6 +1,13 @@
 <template>
-  <div class="logo">
-    <img src="@/assets/images/logo.png">
+  <div class="logo_wrap">
+    <div @click="isBG = !isBG">
+      <div
+        v-if="isBG"
+        class="img"/>
+      <img
+        v-else
+        src="@/assets/images/logo.png">
+    </div>
     <h1>{{ message }}</h1>
   </div>
 </template>
@@ -13,7 +20,10 @@ export default {
   },
   data() {
     return {
+      isBG: false
     }
+  },
+  methods: {
   }
 }
 </script>
