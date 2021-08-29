@@ -121,13 +121,10 @@ html.is_app{
           height: 1px;
           background: #333;
           content: '';
-          right: 0;
-          transition-duration: 0.3s, 0.2s;
-          transition-delay: 0.5s, 0s;
+          transition:top 0.3s 0.5s, transform 0.2s 0s;
           top: -7px;
-          right: 6px;
+          right: 0;
           width: 12px;
-          transition-property: top, transform;
         }
         &:after {
           display: block;
@@ -136,28 +133,26 @@ html.is_app{
           height: 1px;
           background: #333;
           content: '';
-          right: 0;
-          transition-duration: 0.3s, 0.2s;
-          transition-delay: 0.5s, 0s;
+          transition:bottom 0.3s 0.5s, transform 0.2s 0s;
           bottom: -7px;
+          right: 0;
           width: 12px;
-          transition-property: bottom, transform;
         }
       }
       &.on {
         i {
           width: 20px;
-          background: none !important;
-          transition: background 0s 0.3s;
+          background: transparent;
+          // transition: background 0s 0s;
           &:before {
-            transition-delay: 0s, 0.3s;
+            transition:top 0.3s 0s, transform 0.2s 0.3s;
             right: 0;
             top: 0;
             width: 20px;
             transform: rotate(45deg);
           }
           &:after {
-            transition-delay: 0s, 0.3s;
+            transition:bottom 0.3s 0s, transform 0.2s 0.3s;
             bottom: 0;
             width: 20px;
             transform: rotate(-45deg);
