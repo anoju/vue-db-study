@@ -2,6 +2,7 @@
   <section class="page">
     <header class="header">
       <button
+        v-if="!gnbOpen"
         type="button"
         class="btn_back"
         aria-label="뒤로가기"/>
@@ -16,6 +17,17 @@
         <i/>
       </button>
     </header>
+    <aside
+      :class="{active: gnbOpen}"
+      class="gnb_wrap">
+      <nav>
+        <ul>
+          <li><router-link to="/hello/HelloWorld">helloWorld</router-link></li>
+          <li><router-link to="/page/index">index</router-link></li>
+          <li><router-link to="/page/form">form</router-link></li>
+        </ul>
+      </nav>
+    </aside>
     <main class="container">
       <slot />
     </main>
