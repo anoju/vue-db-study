@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div>
     <div @click="isBg = !isBg">
       <div v-if="isBg" class="logo"></div>
       <img v-else alt="Vue logo" src="@/assets/images/logo.png">
@@ -13,7 +13,7 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'Home',
+  name: 'helloHome',
   components: {
     HelloWorld
   },
