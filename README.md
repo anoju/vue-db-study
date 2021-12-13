@@ -1,4 +1,4 @@
-# vue-db-study
+# vue-study
    
 > VUE 공식 사이트   
 > https://vuejs.org/
