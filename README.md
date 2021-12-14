@@ -1,4 +1,4 @@
-# vue-study
+# vue-study-ready
    
 > VUE 공식 사이트   
 > https://vuejs.org/
